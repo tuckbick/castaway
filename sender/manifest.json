@@ -1,0 +1,33 @@
+{
+    "name": "Castaway",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "Easily enable Chromecast functionality on any site.",
+    "permissions" : [
+        "tabs",
+        "http://*/*",
+        "https://*/*",
+        "storage"
+    ],
+    "browser_action": {
+        "default_title": "Castaway"
+    },
+    "homepage_url" : "https://github.com/tuckbick/castaway",
+    "options_page": "options.html",
+    "content_scripts":[
+        {
+            "matches":["file://*/*", "http://*/*", "https://*/*"],
+            "js":[
+                "js/jquery.min.js",
+                "js/app.js"
+            ],
+            "css": [],
+            "run_at":"document_end"
+            ,"all_frames": true
+        }
+    ]
+    ,"web_accessible_resources": [
+        "js/jquery.min.js",
+        "js/page.js"
+    ]
+}
