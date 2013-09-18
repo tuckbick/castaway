@@ -2,7 +2,7 @@
     "name": "Castaway",
     "version": "0.1",
     "manifest_version": 2,
-    "description": "Easily enable Chromecast functionality on any site.",
+    "description": "Chrome extension that easily enables Chromecast functionality on any site.",
     "permissions" : [
         "tabs",
         "http://*/*",
